@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="vacancy.html" style="display: block; margin-bottom: 20px;">
+            Вакансии
+        </a>
+        <a href="referall.html" style="display: block; margin-bottom: 20px;">
+            Программа
+        </a>
+        <a href="vacancies.html" style="display: block; margin-bottom: 20px;">
+            Вакансии 2
+        </a>
+
+
+
+
+        <button data-modal="calcModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Получите расчет
+        </button>
+        <button data-modal="thankModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Спасибо!
+        </button>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="calcModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <img src="img/burger2.svg" alt="">
+            </button>
+            <div class="h4 text-center">
+                Получите расчет стоимости привлечения полноценной команды
+            </div>
+            <form class="modal-form grid">
+                <div class="fg">
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+                <div class="fg">
+                    <input type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="fg">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <button class="consult-form__btn m-btn m-btn-big m-btn-red">
+                    <span>Найти специалистов</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal modal-thank" id="thankModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <img src="img/burger2.svg" alt="">
+            </button>
+            <div class="modal__thank">
+                <img src="img/check.svg" alt="" class="modal__icon">
+                <div class="h3">
+                    Спасибо!
+                </div>
+                <div class="h4 text-center">
+                    Ваша заявка принята
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
